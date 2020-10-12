@@ -1,0 +1,4 @@
+<% Student.search(params[:query]).each do |student| %>
+  <%= render partial: "student", locals: {student: student } %>
+
+<% end %>
